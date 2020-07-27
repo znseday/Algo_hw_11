@@ -30,6 +30,9 @@ bool FindSkeleton::LoadFromFile(const std::string &fn)
     if (!f)
         return false;
 
+    Parents.clear();
+    Graph.clear();
+
     size_t ECount;
     f >> N >> ECount;
 
